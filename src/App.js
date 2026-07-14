@@ -814,7 +814,10 @@ export default function App() {
           <div className="footer-top">
             <div className="footer-brand">
               <a href="#top" className="logo">
-                <span className="logo-mark"><Network size={17} strokeWidth={2} /></span>
+                {/* <span className="logo-mark"><Network size={17} strokeWidth={2} /></span> */}
+                <span className="logo-mark">
+                  <img src="/rovestacks_logo.png" alt="Rovestacks Logo" className="logo-image" />
+                </span>
                 <span className="logo-text">Rovestacks</span>
               </a>
               <p>Building Africa's connected digital ecosystem, starting with Rovenet.</p>
