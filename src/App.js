@@ -403,12 +403,25 @@ export default function App() {
           display:flex; align-items:center; gap:9px; font-family:var(--display);
           font-weight:700; font-size:21px; white-space:nowrap;
         }
-        .logo-mark{
-          width:32px; height:32px; border-radius:9px;
-          background: linear-gradient(135deg, var(--fb-blue), var(--fb-blue-deep));
-          display:flex; align-items:center; justify-content:center;
-          box-shadow: 0 4px 14px rgba(24,119,242,0.35);
+        .logo-mark {
+          width: 38px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
+
+        .logo-image {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        // .logo-mark{
+        //   width:32px; height:32px; border-radius:9px;
+        //   // background: linear-gradient(135deg, var(--fb-blue), var(--fb-blue-deep));
+        //   display:flex; align-items:center; justify-content:center;
+        //   box-shadow: 0 4px 14px rgba(24,119,242,0.35);
+        // }
         .logo-mark svg{ stroke:#fff; }
         .logo-text{
           background: linear-gradient(90deg, var(--fb-blue-dark), var(--fb-blue));
@@ -613,8 +626,11 @@ export default function App() {
       <header>
         <nav className="nav">
           <a href="#top" className="logo">
-            <span className="logo-mark"><Network size={17} strokeWidth={2} /></span>
-            <span className="logo-text">Rovestacks</span>
+            {/* <span className="logo-mark"><Network size={17} strokeWidth={2} /></span> */}
+            <span className="logo-mark">
+              <img src="/rovestacks_logo.png" alt="Rovestacks Logo" className="logo-image" />
+            </span>
+            <span className="logo-text">ROVESTΛCKS</span>
           </a>
           <ul className="nav-links">
             <li><a href="#vision">Vision</a></li>
