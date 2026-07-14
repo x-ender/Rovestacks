@@ -1,34 +1,7 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
-
-
 import React, { useEffect, useRef, useState } from "react";
 import {
   Store, MapPin, Gift, Briefcase, ShieldCheck, Zap, Globe2, Users2,
-  Menu, X, Download, ArrowRight, Mail, Instagram, Linkedin,
+  Menu, X, Download, ArrowRight, Mail, Twitter, Instagram, Linkedin,
   Network, TrendingUp, Star, Clock, ChevronRight
 } from "lucide-react";
 
@@ -825,9 +798,9 @@ export default function App() {
           <div className="footer-bottom">
             <span>© 2026 Rovestacks. All rights reserved.</span>
             <div className="social-row">
-              <a href="#" aria-label="Twitter / X"><X size={15} strokeWidth={1.8} /></a>
-              <a href="#" aria-label="Instagram"><Mail size={15} strokeWidth={1.8} /></a>
-              <a href="#" aria-label="LinkedIn"><Mail size={15} strokeWidth={1.8} /></a>
+              <a href="#" aria-label="Twitter / X"><Twitter size={15} strokeWidth={1.8} /></a>
+              <a href="#" aria-label="Instagram"><Instagram size={15} strokeWidth={1.8} /></a>
+              <a href="#" aria-label="LinkedIn"><Linkedin size={15} strokeWidth={1.8} /></a>
             </div>
           </div>
         </div>
