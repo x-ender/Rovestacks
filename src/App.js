@@ -29,7 +29,7 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   Store, MapPin, Gift, Briefcase, ShieldCheck, Zap, Globe2, Users2,
   Menu, X, Download, ArrowRight, Mail,
-  Network, TrendingUp, Star, Clock,
+  TrendingUp, Star, Clock,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
