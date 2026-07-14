@@ -28,8 +28,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import {
   Store, MapPin, Gift, Briefcase, ShieldCheck, Zap, Globe2, Users2,
-  Menu, X, Download, ArrowRight, Mail, Instagram, Linkedin,
-  Network, TrendingUp, Star, Clock, ChevronRight
+  Menu, X, Download, ArrowRight, Mail,
+  Network, TrendingUp, Star, Clock,
 } from "lucide-react";
 
 /* ------------------------------------------------------------------ */
@@ -647,7 +647,7 @@ export default function App() {
             that brings how you shop, discover, and earn into a single connected home.
           </p>
           <div className="hero-ctas">
-            <a href="#download" className="btn btn-primary"><Download size={18} strokeWidth={2} /> Download Rovenet</a>
+            <a href="https://google.com" className="btn btn-primary"><Download size={18} strokeWidth={2} /> Download Rovenet</a>
             <a href="#waitlist" className="btn btn-ghost">Join Waitlist <ArrowRight size={17} strokeWidth={2} /></a>
           </div>
         </div>
@@ -825,9 +825,9 @@ export default function App() {
           <div className="footer-bottom">
             <span>© 2026 Rovestacks. All rights reserved.</span>
             <div className="social-row">
-              <a href="#" aria-label="Twitter / X"><X size={15} strokeWidth={1.8} /></a>
-              <a href="#" aria-label="Instagram"><Mail size={15} strokeWidth={1.8} /></a>
-              <a href="#" aria-label="LinkedIn"><Mail size={15} strokeWidth={1.8} /></a>
+              <a href="https://x.com/rovestacks" aria-label="Twitter / X"><X size={15} strokeWidth={1.8} /></a>
+              <a href="https://instagram.com/rovestacks" aria-label="Instagram"><Mail size={15} strokeWidth={1.8} /></a>
+              {/* <a href="https://linkedin.com/company/rovestacks" aria-label="LinkedIn"><Mail size={15} strokeWidth={1.8} /></a> */}
             </div>
           </div>
         </div>
