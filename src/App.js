@@ -852,7 +852,6 @@ const ASSET = {
   shotSocial: "/screenshot3.png",
   shotMarket: "/screenshot2.png",
   shotListing: "/screenshot1.png",
-  shotListings: "/screenshot1.png",
 };
 
 /* ------------------------------------------------------------------ */
