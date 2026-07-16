@@ -1682,7 +1682,7 @@ export default function App() {
             <Reveal delay={100}>
               <div className="product-grid">
                 <div className="product-copy">
-                  <span className="product-badge">\u25cf Live now</span>
+                  <span className="product-badge">&#9679; Live now</span>
                   <div className="logo-rovenet" style={{ marginTop: 18 }}>
                     <img src={ASSET.rovenetCircle} alt="Rovenet logo" />
                     <span><span className="rove">Rove</span><span className="net">Net</span></span>
@@ -1846,7 +1846,7 @@ export default function App() {
             </div>
           </div>
           <div className="footer-bottom">
-            <span>\u00a9 2026 Rovestacks. All rights reserved.</span>
+            <span>&copy; 2026 Rovestacks. All rights reserved.</span>
             <div className="social-row">
               <a href="https://twitter.com/rovestacks" aria-label="Twitter / X"><X size={15} strokeWidth={1.8} /></a>
               <a href="https://instagram.com/rovestacks" aria-label="Instagram"><Mail size={15} strokeWidth={1.8} /></a>
