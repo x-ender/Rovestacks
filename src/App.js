@@ -1131,14 +1131,14 @@ import {
 /*  Assets                                                            */
 /* ------------------------------------------------------------------ */
 const ASSET = {
-  rovestacksLogo: "/mnt/user-data/uploads/rovestacks_logo.png",
-  rovenetCircle: "/mnt/user-data/uploads/rovenet_circle.png",
-  shotHome: "/mnt/user-data/uploads/screenshot5.png",
-  shotHomeGames: "/mnt/user-data/uploads/screenshot4.png",
-  shotPasscode: "/mnt/user-data/uploads/screenshot6.png",
-  shotSocial: "/mnt/user-data/uploads/screenshot3.png",
-  shotMarket: "/mnt/user-data/uploads/screenshot2.png",
-  shotListing: "/mnt/user-data/uploads/screenshot1.png",
+  rovestacksLogo: "/rovestacks_logo.png",
+  rovenetCircle: "/rovenet_circle.png",
+  shotHome: "/screenshot5.png",
+  shotHomeGames: "/screenshot4.png",
+  shotPasscode: "/screenshot6.png",
+  shotSocial: "/screenshot3.png",
+  shotMarket: "/screenshot2.png",
+  shotListing: "/screenshot1.png",
 };
 const DOCX = {
   privacy: "/rovenet-privacy-policy.docx",
