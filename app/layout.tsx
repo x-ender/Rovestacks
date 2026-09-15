@@ -34,20 +34,56 @@ const michroma = Michroma({
   display: "swap",
 });
 
+const SITE_URL = "https://www.rovestacks.com";
+const SITE_TITLE = "Rovestacks \u2014 Building Africa's Connected Digital Ecosystem";
+const SITE_DESCRIPTION =
+  "Rovestacks Technologies Limited is a Nigerian technology company building Africa's connected digital ecosystem. Rovenet, our flagship product, is a classified and digital marketplace.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.rovestacks.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Rovestacks \u2014 Building Africa's Connected Digital Ecosystem",
+    default: SITE_TITLE,
     template: "%s | Rovestacks",
   },
-  description:
-    "Rovestacks Technologies Limited is a Nigerian technology company building Africa's connected digital ecosystem. Rovenet, our flagship product, is a classified and digital marketplace.",
+  description: SITE_DESCRIPTION,
+  icons: {
+    icon: [
+      { url: "/icon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: "/apple-icon.png",
+  },
+  openGraph: {
+    type: "website",
+    url: SITE_URL,
+    siteName: "Rovestacks",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Rovestacks \u2014 Building Africa's Connected Digital Ecosystem",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    images: ["/images/og-image.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="en">
