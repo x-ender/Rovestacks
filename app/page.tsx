@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { Store, Share2, Gamepad2, Wallet, Lock, Zap, Globe2, Users2, Download, ArrowRight, ChevronRight, type LucideIcon } from "lucide-react";
+import { Store, Share2, Gamepad2, Wallet, MessagesSquare, PlayCircle, Lock, Zap, Globe2, Users2, Download, ArrowRight, ChevronRight, type LucideIcon } from "lucide-react";
 import NebulaCanvas from "./components/NebulaCanvas";
 import HexScatter from "./components/HexScatter";
 import PhoneShot from "./components/PhoneShot";
@@ -20,22 +20,32 @@ const ROVENET_FEATURES: Feature[] = [
   {
     icon: Store,
     title: "Marketplace",
-    copy: "Post and browse Vehicles, Property, Electronics, Fashion, Services, and Jobs \u2014 free to list, with no commission taken on sales between users.",
+    copy: "Shop Naira-priced classifieds across Nigeria \u2014 Vehicles, Property, Electronics, Fashion, Services, and Jobs. Free to list, with no commission taken on sales between users.",
+  },
+  {
+    icon: MessagesSquare,
+    title: "Communities",
+    copy: "Join public and private communities, share posts, take part in polls and discussions, and connect with people who share your interests.",
   },
   {
     icon: Share2,
     title: "WhatsApp Status Ads",
-    copy: "Post sponsored ad campaigns to your WhatsApp status and get paid directly by the brands behind them.",
+    copy: "Earn by posting sponsored ad campaigns to your WhatsApp status, funded by the brands behind them.",
   },
   {
     icon: Gamepad2,
     title: "Games & Rewards",
-    copy: "Play built-in games, currently Jump Jump and Trivia, for a chance to earn additional in-app rewards \u2014 with more on the way.",
+    copy: "Play Jump Jump, Trivia, and ranked Ludo for a chance to earn in-app rewards \u2014 with more games on the way.",
+  },
+  {
+    icon: PlayCircle,
+    title: "Social Hunt",
+    copy: "Watch sponsored YouTube and TikTok videos from brands and earn in-app credits for doing so.",
   },
   {
     icon: Wallet,
     title: "Earnings & Rewards",
-    copy: "Redeem your in-app earnings instantly as airtime and data through our VTU integration.",
+    copy: "Redeem your in-app earnings as airtime and data through our VTU integration.",
   },
 ];
 
@@ -79,8 +89,8 @@ export default function HomePage() {
               <Wordmark /> is a Nigerian technology innovation company building digital products
               across commerce, media, and everyday life. We design each product to stand on its
               own, while sharing one foundation of trust, security, and community underneath. Our
-              first product, Rovenet, is live today &mdash; a classified and digital marketplace
-              app already helping thousands of Nigerians buy, sell, and earn.
+              first product, Rovenet, is live today &mdash; one account for everything: a classified
+              and digital marketplace app where Nigerians buy, sell, join in, and earn.
             </p>
             <div className="hero-ctas">
               <a href="#waitlist" className="btn btn-blue">
@@ -94,7 +104,7 @@ export default function HomePage() {
           <div className="hero-phone-col">
             <PhoneShot
               src="/images/screenshot-home.png"
-              alt="Rovenet home screen showing wallet balance and Social Hunt tasks"
+              alt="Rovenet home screen showing wallet balance and Social Hunt"
             />
           </div>
         </div>
@@ -136,10 +146,10 @@ export default function HomePage() {
         <div className="wrap">
           <Reveal className="section-head">
             <span className="eyebrow">Meet Rovenet</span>
-            <h2>Nigeria&apos;s classified and digital marketplace, in your pocket.</h2>
+            <h2>One account. Everything Rovenet.</h2>
             <p>
-              Post listings, earn by posting sponsored ad campaigns to your WhatsApp status, play
-              games for rewards, and redeem your earnings &mdash; all from one app.
+              Buy, sell, join in and earn, all on Rovenet. Shop Naira-priced classifieds across
+              Nigeria, join communities, earn with WhatsApp Ads, and play games in the app.
             </p>
           </Reveal>
           <div className="feature-grid">
@@ -162,7 +172,7 @@ export default function HomePage() {
             <div className="teaser-strip">
               <Image src="/images/screenshot-home.png" alt="Rovenet home screen" width={260} height={550} />
               <Image src="/images/screenshot-market.png" alt="Rovenet MarketHub categories" width={260} height={550} />
-              <Image src="/images/screenshot-social.png" alt="Rovenet social earning screen" width={260} height={550} />
+              <Image src="/images/screenshot-social.png" alt="Rovenet WhatsApp Ads screen" width={260} height={550} />
             </div>
             <Link href="/rovenet" className="explore-link">
               See everything Rovenet can do <ChevronRight size={16} />

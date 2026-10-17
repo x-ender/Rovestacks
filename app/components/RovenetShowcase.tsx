@@ -19,14 +19,14 @@ const TABS: Tab[] = [
     label: "Home",
     icon: Store,
     shot: "/images/screenshot-home.png",
-    copy: "A single feed for local promotions, ongoing ad campaigns, and games.",
+    copy: "One home for your wallet, featured promotions, Social Hunt, and games.",
   },
   {
     key: "market",
     label: "Marketplace",
     icon: MapPin,
     shot: "/images/screenshot-market.png",
-    copy: "Sixteen categories covering products, services, and jobs \u2014 browse or post in seconds.",
+    copy: "Shop Naira-priced classifieds across sixteen categories \u2014 products, services, and jobs. Browse or post in seconds.",
   },
   {
     key: "social",
@@ -40,7 +40,7 @@ const TABS: Tab[] = [
     label: "Games",
     icon: Gamepad2,
     shot: "/images/screenshot-home-games.png",
-    copy: "Chase rewards through Jump Jump and Trivia \u2014 with more games on the way.",
+    copy: "Chase rewards through Jump Jump, Trivia, and ranked Ludo \u2014 with more games on the way.",
   },
 ];
 

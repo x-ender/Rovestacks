@@ -45,9 +45,9 @@ export default function ProductsPage() {
               </div>
               <h3>Nigeria&apos;s classified and digital marketplace app.</h3>
               <p>
-                List anything from vehicles to fashion for free, get paid to post sponsored ad
-                campaigns to your WhatsApp status, play in-app games, and redeem your earnings as
-                VTU.
+                One account. Everything Rovenet. Shop Naira-priced classifieds across Nigeria, join
+                communities, earn with WhatsApp Ads, play games in the app, and redeem your
+                earnings as airtime and data through VTU.
               </p>
               <Link href="/rovenet" className="btn btn-violet" style={{ marginTop: 20, width: "fit-content" }}>
                 Explore Rovenet <ArrowRight size={16} />
@@ -64,8 +64,8 @@ export default function ProductsPage() {
           <div className="future-row">
             <div className="future-card">
               <div className="dot" />
-              <strong style={{ color: "var(--white)" }}>Games</strong>
-              <p style={{ marginTop: 6, fontSize: 13.5 }}>In active development</p>
+              <strong style={{ color: "var(--white)" }}>Digital Spaces</strong>
+              <p style={{ marginTop: 6, fontSize: 13.5 }}>In planning</p>
             </div>
             <div className="future-card">
               <div className="dot" />

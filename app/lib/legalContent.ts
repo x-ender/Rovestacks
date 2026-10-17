@@ -9,7 +9,7 @@ export type LegalSection = {
   body: LegalBlock[];
 };
 
-export const EFFECTIVE_DATE = "September 15, 2026";
+export const EFFECTIVE_DATE = "October 17, 2026";
 export const COMPANY_FULL = "Rovestacks Technologies Limited";
 export const RC_NUMBER = "9619939";
 
@@ -24,6 +24,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
       "Account details, including full name, phone number, email address, and password.",
       "Profile information, such as a display photo, city or local area, and optional business or seller details.",
       "Listing content, including photographs, descriptions, prices, and category information you submit for products, services, or job posts.",
+      "Community content, including posts, replies, poll votes, gifts, and the communities you create or join.",
       "VTU redemption details supplied when requesting to redeem your earnings.",
       "Identity verification information, such as a government-issued identification document or National Identification Number (NIN), submitted for identity verification through our identity verification partner, currently Dojah, where required by us or by our payment or regulatory partners.",
       "Correspondence you send us, including support tickets and dispute reports.",
@@ -31,7 +32,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     { h: "2.2 Information collected automatically" },
     { ul: [
       "Device information, including device type, operating system, unique device identifiers, and application version.",
-      "Usage data, including listings viewed, tasks completed, game activity, session duration, and general interaction patterns.",
+      "Usage data, including listings viewed, community activity, campaigns completed, sponsored videos watched, game activity, session duration, and general interaction patterns.",
       "Approximate location, where permitted, used to surface relevant local listings.",
       "Log data, including IP address, access timestamps, and diagnostic or crash reports.",
     ]},
@@ -57,9 +58,10 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     { ul: [
       "To create, verify, and administer your account, including via Google Sign-In where you choose that option.",
       "To publish your listings and enable other users to search for and respond to them.",
+      "To operate Communities, including displaying your posts and replies to other members, moderating content, and handling reports.",
       "To process payments for promotion packages, process task deposits, and process redemption requests.",
       "To verify your identity through Dojah where required to access certain features, such as WhatsApp Status Ad Marketing.",
-      "To operate the in-app game and WhatsApp Status Ad Marketing features, including verifying genuine completion of campaigns before releasing payment.",
+      "To operate the in-app games, Social Hunt, and WhatsApp Status Ad Marketing features, including maintaining leaderboards and seasons and verifying genuine completion of campaigns before releasing payment.",
       "To detect, investigate, and prevent fraud, fake engagement, abuse of the rewards system, and other violations of our Terms & Conditions.",
       "To communicate with you regarding your account, transactions, and support requests.",
       "To maintain, secure, and improve the performance and safety of our Services.",
@@ -69,7 +71,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
   { id: "share", title: "6. How We Share Your Information", body: [
     { p: "We do not sell personal data. We disclose information only in the following circumstances:" },
     { ul: [
-      "With other users, limited to what you choose to include in a public listing or profile.",
+      "With other users, limited to what you choose to include in a public listing, profile, or Community post. Content you post in a public community may be visible to anyone; content in a private community is visible to its members.",
       "With our payment service providers (Paystack, Opay), solely to process promotion-package payments and task deposits.",
       "With our VTU provider (VTPass), solely to fulfil a VTU redemption you request.",
       "With our identity verification partner (Dojah), solely to verify your identity where required to access certain features, such as WhatsApp Status Ad Marketing.",
@@ -83,7 +85,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
     { p: "As Rovestacks extends its Services beyond Nigeria, personal data may be processed in, or transferred to, other African jurisdictions or to service providers located outside Nigeria. Where this occurs, we take reasonable steps to ensure such transfers are subject to adequate safeguards consistent with the Nigeria Data Protection Act and applicable regulations." },
   ]},
   { id: "retention", title: "8. Data Retention", body: [
-    { p: "We retain account and transaction information for as long as your account remains active and for a reasonable period thereafter to satisfy legal, accounting, fraud-prevention, and payment-partner recordkeeping requirements. Listing content may be archived or removed once a listing is closed, expired, or withdrawn." },
+    { p: "We retain account and transaction information for as long as your account remains active and for a reasonable period thereafter to satisfy legal, accounting, fraud-prevention, and payment-partner recordkeeping requirements. Where you delete your account, we remove or anonymise personal data we no longer need, but transaction, wallet, and redemption records may be retained for as long as required by law, fraud prevention, and our payment and VTU partners. Listing content may be archived or removed once a listing is closed, expired, or withdrawn, and Community posts you made may be removed or shown as anonymous after account deletion." },
   ]},
   { id: "rights", title: "9. Your Rights", body: [
     { p: "Subject to applicable law, you have the right to:" },
@@ -129,13 +131,16 @@ export const TERMS_SECTIONS: LegalSection[] = [
       `"User," "you," or "your" means any individual or entity that registers for or uses the Service.`,
       `"Listing" means any product, service, or job posting submitted by a User.`,
       `"Campaign" means a sponsored WhatsApp status advertisement made available through the WhatsApp Status Ad Marketing feature.`,
+      `"Community" means a public or private group within Rovenet in which Users can post, reply, vote in polls, and interact.`,
+      `"Social Hunt" means the feature through which Users watch sponsored videos from brands and receive in-app credits.`,
+      `"Credits" and "Rewards" mean the in-app balances Users may earn or receive through Rovenet, as described in these Terms.`,
     ]},
   ]},
   { id: "eligibility", title: "3. Eligibility", body: [
     { p: "You must be at least 18 years old and capable of forming a binding contract under applicable law to register for or use the Service. By using the Service, you represent and warrant that you meet these requirements." },
   ]},
   { id: "description", title: "4. Description of Service", body: [
-    { p: "Rovenet is a classified and digital marketplace platform connecting buyers and sellers of products, services, and jobs across Nigeria, with the intention of eventual expansion across Africa. Rovenet functions as a communication channel: it allows Users to post Listings and allows other Users to view, respond to, and negotiate directly with Listing owners." },
+    { p: "Rovenet is a classified and digital marketplace platform connecting buyers and sellers of products, services, and jobs across Nigeria, with the intention of eventual expansion across Africa. In addition to classifieds, Rovenet offers Communities, WhatsApp Status Ad Marketing, Social Hunt, and in-app games under a single user account. For classifieds, Rovenet functions as a communication channel: it allows Users to post Listings and allows other Users to view, respond to, and negotiate directly with Listing owners." },
     { ul: [
       "Rovenet does not process checkout, hold inventory, or facilitate delivery of goods or services listed on the platform.",
       "All negotiation, payment between buyers and sellers, and arrangement of pickup or delivery occurs directly between the parties, outside of Rovenet.",
@@ -158,10 +163,19 @@ export const TERMS_SECTIONS: LegalSection[] = [
       "Posting a Listing is free of charge. Sellers may optionally purchase promotion packages to increase a Listing's visibility.",
     ]},
   ]},
-  { id: "promotion", title: "8. Promotion Packages and Payment", body: [
+  { id: "communities", title: "8. Communities and User Content", body: [
+    { p: "Rovenet includes Communities, in which Users may post, reply, vote in polls, and interact with other members. Communities may be public or private, and Rovestacks may restrict who can create or moderate them." },
+    { ul: [
+      "You are solely responsible for content you post in a Community, and you grant Rovestacks the licence described in Section 14 to host and display it.",
+      "Rovestacks and community moderators may remove content, restrict members, or close a Community that violates these Terms or applicable law, and may act on reports from other Users.",
+      "Where the app allows Users to send gifts to authors of posts, gifts are made using in-app Rewards, are final once sent, and are not refundable. Rewards received as gifts are subject to the Earnings and Redemption provisions of these Terms.",
+      "Views expressed in a Community are those of the User who posted them and not of Rovestacks.",
+    ]},
+  ]},
+  { id: "promotion", title: "9. Promotion Packages and Payment", body: [
     { p: "Sellers may purchase promotion packages through a supported payment gateway (currently Paystack and Opay) to feature or boost a Listing for a defined period. Prices are displayed prior to payment. Payments for promotion packages are non-refundable once processed, as further described in our Refund Policy." },
   ]},
-  { id: "whatsapp-ads", title: "9. WhatsApp Status Ad Marketing", body: [
+  { id: "whatsapp-ads", title: "10. WhatsApp Status Ad Marketing", body: [
     { p: `Rovenet includes a WhatsApp status advertising feature connecting brands and sponsors ("Sponsors") with Users who post sponsored ad campaigns to their personal WhatsApp status ("Creators").` },
     { ul: [
       "A Sponsor must fund a Campaign by depositing the campaign budget through a supported payment gateway before the Campaign is published to Creators.",
@@ -170,44 +184,48 @@ export const TERMS_SECTIONS: LegalSection[] = [
       "Rovestacks reserves the right to review, moderate, or reject any Campaign content, including content that is unlawful, misleading, or violates WhatsApp's own policies.",
     ]},
   ]},
-  { id: "games", title: "10. In-App Games and Rewards", body: [
-    { p: "Rovenet offers in-app games, currently including Jump Jump and Trivia, as loyalty and engagement features, with additional games planned from time to time. Points, credits, or rewards earned may be redeemable subject to the rules displayed within the relevant feature. Rovestacks may adjust game mechanics, rewards, or availability at its discretion." },
+  { id: "games", title: "11. In-App Games, Social Hunt and Rewards", body: [
+    { p: "Rovenet offers in-app games, currently including Jump Jump, Trivia, and Ludo, as loyalty and engagement features, with additional games planned from time to time. Some games may run in seasons or ranked formats, may offer a limited number of free plays before Credits are required, and may offer Rewards to top-ranked players, in each case as displayed within the relevant feature. Credits or Rewards earned may be redeemed subject to the rules displayed within the relevant feature and Section 12 below." },
+    { p: "Through Social Hunt, Users may watch sponsored videos hosted on third-party platforms such as YouTube or TikTok and receive Credits as shown in the app. Rovestacks may limit, withhold, or reverse Credits where viewing is reasonably determined to be automated, repeated, or otherwise not genuine." },
+    { p: "Rovestacks may adjust game mechanics, seasons, Rewards, or availability at its discretion, and may exclude Users who cheat, collude, or exploit defects in a game." },
   ]},
-  { id: "earnings", title: "11. Earnings and Redemption", body: [
+  { id: "earnings", title: "12. Earnings and Redemption", body: [
     { ul: [
-      "Users may accumulate earnings through eligible activities, such as completed Campaigns or in-app rewards.",
-      "Earnings may be redeemed as airtime, data, or other VTU products through our VTU partner, currently VTPass.",
+      "Users may accumulate earnings through eligible activities, such as completed Campaigns, Social Hunt, in-app games, and Community gifts.",
+      "Earnings may be redeemed only as airtime, data, or other VTU products through our VTU partner, currently VTPass.",
       "Redemption requests are subject to identity and account verification and may be delayed or declined where Rovestacks reasonably suspects fraud or a violation of these Terms.",
     ]},
   ]},
-  { id: "third-party", title: "12. Third-Party Payment, Verification, and VTU Services", body: [
+  { id: "third-party", title: "13. Third-Party Payment, Verification, and VTU Services", body: [
     { p: "All payments are processed through licensed third-party payment service providers, currently Paystack and Opay; VTU redemptions are processed through VTPass; identity verification is processed through Dojah. Rovestacks does not store your full card or bank login credentials. Rovestacks is not responsible for delays, errors, or service interruptions caused by these third parties once an instruction has been correctly submitted to them." },
   ]},
-  { id: "ip", title: "13. Intellectual Property", body: [
+  { id: "ip", title: "14. Intellectual Property", body: [
     { p: "The Rovestacks and Rovenet names, logos, and all associated trademarks, together with the design, software, and content of the Service (excluding User-submitted content), are the property of Rovestacks or its licensors. By submitting a Listing or other content, you grant Rovestacks a non-exclusive, worldwide, royalty-free licence to host, display, and distribute that content solely for the purpose of operating and promoting the Service." },
   ]},
-  { id: "prohibited", title: "14. Prohibited Conduct", body: [
+  { id: "prohibited", title: "15. Prohibited Conduct", body: [
     { ul: [
       "Posting counterfeit, stolen, illegal, or prohibited goods or services.",
       "Creating multiple accounts to manipulate tasks, rewards, referrals, or Listing visibility.",
       "Using bots, scripts, or automated tools to complete Campaigns or interact with the Service.",
       "Harassing, defrauding, or misrepresenting yourself to another User.",
       "Circumventing, disabling, or interfering with security features of the Service, including identity verification.",
+      "Posting unlawful, hateful, sexually explicit, or misleading content in a Community, or spamming or harassing other members.",
+      "Colluding with other Users, using multiple accounts, or exploiting defects to gain an unfair advantage in games, Social Hunt, or leaderboards.",
     ]},
   ]},
-  { id: "suspension", title: "15. Account Suspension and Termination", body: [
+  { id: "suspension", title: "16. Account Suspension and Termination", body: [
     { p: "Rovestacks may suspend or terminate any account, at its discretion, where it reasonably believes these Terms, applicable law, or the policies of our payment, verification, or VTU partners have been violated. Where appropriate, Rovestacks will attempt to notify the affected User of the reason for suspension or termination." },
   ]},
-  { id: "liability", title: "16. Disclaimers and Limitation of Liability", body: [
+  { id: "liability", title: "17. Disclaimers and Limitation of Liability", body: [
     { p: `The Service is provided on an "as is" and "as available" basis, without warranties of any kind, whether express or implied. To the fullest extent permitted by law, Rovestacks is not liable for any dispute, loss, or damage arising from a transaction between a buyer and seller, from content posted by Users, or from the acts or omissions of third-party payment, verification, or VTU partners. Rovestacks' aggregate liability for any claim arising from your use of the Service shall not exceed the total fees you paid to Rovestacks in the three months preceding the claim.` },
   ]},
-  { id: "indemnity", title: "17. Indemnification", body: [
+  { id: "indemnity", title: "18. Indemnification", body: [
     { p: "You agree to indemnify and hold Rovestacks harmless from any claim, liability, or expense, including reasonable legal fees, arising from your breach of these Terms, your Listings, or your use of the Service." },
   ]},
-  { id: "dispute", title: "18. Dispute Resolution and Governing Law", body: [
+  { id: "dispute", title: "19. Dispute Resolution and Governing Law", body: [
     { p: "These Terms are governed by the laws of the Federal Republic of Nigeria. Parties shall first attempt to resolve any dispute through good-faith negotiation. Where a dispute cannot be resolved amicably within thirty (30) days, it shall be subject to the exclusive jurisdiction of the courts of Nigeria." },
   ]},
-  { id: "general", title: "19. General Provisions", body: [
+  { id: "general", title: "20. General Provisions", body: [
     { ul: [
       "Severability: if any provision of these Terms is held unenforceable, the remaining provisions remain in full force.",
       "Force majeure: Rovestacks is not liable for delays or failures resulting from causes beyond its reasonable control.",
@@ -215,10 +233,10 @@ export const TERMS_SECTIONS: LegalSection[] = [
       "Entire agreement: these Terms, together with our Privacy Policy and Refund Policy, constitute the entire agreement between you and Rovestacks regarding the Service.",
     ]},
   ]},
-  { id: "changes-terms", title: "20. Changes to These Terms", body: [
+  { id: "changes-terms", title: "21. Changes to These Terms", body: [
     { p: "We may update these Terms from time to time. Material changes will be communicated in-app or by email prior to becoming effective. Continued use of the Service after an update constitutes acceptance of the revised Terms." },
   ]},
-  { id: "contact-terms", title: "21. Contact Us", body: [
+  { id: "contact-terms", title: "22. Contact Us", body: [
     { ul: ["Email: legal@rovestacks.com", `Company: ${COMPANY_FULL} (RC ${RC_NUMBER}), registered with the Corporate Affairs Commission, Nigeria`] },
   ]},
 ];
@@ -252,6 +270,7 @@ export const REFUND_SECTIONS: LegalSection[] = [
   ]},
   { id: "earnings-refund", title: "6. Earnings and Redemption", body: [
     { p: "This Refund Policy governs payments made by sellers and Sponsors to Rovenet. It does not affect a User's ability to redeem earnings validly credited to their account, which is governed separately by the Earnings and Redemption provisions of our Terms & Conditions." },
+    { p: "Gifts sent to other Users within Communities are final once sent. Where in-app Credits are purchased, they are non-refundable once credited to your account, save for a duplicate or erroneous charge under Section 4." },
   ]},
   { id: "statutory", title: "7. Statutory Rights", body: [
     { p: "Nothing in this Policy limits any right you may have under applicable Nigerian consumer protection law that cannot lawfully be excluded or limited by agreement." },

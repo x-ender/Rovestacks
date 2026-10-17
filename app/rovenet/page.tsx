@@ -9,9 +9,9 @@ import Reveal from "../components/Reveal";
 import RovenetShowcase from "../components/RovenetShowcase";
 
 export const metadata: Metadata = {
-  title: "Rovenet \u2014 Buy, Sell, Earn",
+  title: "Rovenet \u2014 One Account. Everything Rovenet.",
   description:
-    "Rovenet is Nigeria's classified and digital marketplace app, built by Rovestacks. List anything for free, get paid to post sponsored ad campaigns to your WhatsApp status, and play games for rewards.",
+    "Buy, sell, join in and earn, all on Rovenet. Shop Naira-priced classifieds across Nigeria, join communities, earn with WhatsApp Ads and play games in the app.",
 };
 
 const CATEGORIES = [
@@ -54,11 +54,10 @@ export default function RovenetPage() {
             <span className="eyebrow" style={{ marginTop: 16 }}>
               A Rovestacks product
             </span>
-            <h1>Buy, sell, earn &mdash; all in one app.</h1>
+            <h1>One account. Everything Rovenet.</h1>
             <p className="lede">
-              Rovenet is Nigeria&apos;s classified and digital marketplace app, built by
-              Rovestacks. List anything from cars to fashion for free, get paid to post sponsored
-              ad campaigns to your WhatsApp status, and play games for extra rewards.
+              Buy, sell, join in and earn, all on Rovenet. Shop Naira-priced classifieds across
+              Nigeria, join communities, earn with WhatsApp Ads and play games in the app.
             </p>
             <div className="store-row">
               <a href="#waitlist" className="store-btn">
@@ -114,7 +113,7 @@ export default function RovenetPage() {
         <div className="wrap">
           <Reveal className="section-head">
             <span className="eyebrow">Earn on Rovenet</span>
-            <h2>Three ways to make money without leaving the app.</h2>
+            <h2>Ways to join in and earn, without leaving the app.</h2>
           </Reveal>
           <div className="earn-grid">
             <Reveal>
@@ -139,7 +138,7 @@ export default function RovenetPage() {
               <div className="earn-card">
                 <Image
                   src="/images/screenshot-home-games.png"
-                  alt="Chase games section with Jump Jump and Trivia"
+                  alt="Chase games section"
                   width={400}
                   height={220}
                   style={{ objectFit: "cover", objectPosition: "top", width: "100%", height: 220 }}
@@ -147,8 +146,8 @@ export default function RovenetPage() {
                 <div className="earn-body">
                   <h3>Games &amp; Chase</h3>
                   <p>
-                    Play Jump Jump or Trivia for a shot at extra rewards &mdash; our way of
-                    giving back to active users, with more games on the way.
+                    Play Jump Jump, Trivia, or ranked Ludo for a shot at in-app rewards, and watch
+                    sponsored videos through Social Hunt &mdash; with more games on the way.
                   </p>
                 </div>
               </div>
@@ -178,9 +177,9 @@ export default function RovenetPage() {
             <span className="eyebrow">Coming to Rovenet</span>
             <h2>What we&apos;re building next.</h2>
             <p>
-              Rovenet today is Classified Ads, WhatsApp Status Ad Marketing, and games (Jump Jump
-              and Trivia, with more on the way). Here&apos;s what&apos;s on the way next &mdash;
-              not yet available, but in active planning.
+              Rovenet today is Naira-priced classifieds, Communities, WhatsApp Status Ad Marketing,
+              and games. Here&apos;s what&apos;s planned next &mdash; not yet available, but in
+              active planning.
             </p>
           </Reveal>
           <Reveal delay={100}>
@@ -203,10 +202,10 @@ export default function RovenetPage() {
               </div>
               <div className="future-card">
                 <div className="dot" />
-                <strong style={{ color: "var(--white)" }}>Bank Withdrawal</strong>
+                <strong style={{ color: "var(--white)" }}>Richer Communities</strong>
                 <p style={{ marginTop: 6, fontSize: 13.5 }}>
-                  Direct withdrawal to Nigerian bank accounts, once we&apos;ve completed the
-                  required regulatory compliance.
+                  More ways to participate in Communities, including resharing and quoting posts
+                  and tools for community creators.
                 </p>
               </div>
             </div>
