@@ -45,16 +45,15 @@ const ROVENET_FEATURES: Feature[] = [
   {
     icon: Wallet,
     title: "Earnings & Rewards",
-    copy: "Redeem your in-app earnings as airtime and data through our VTU integration.",
+    copy: "Spend your in-app earnings on airtime, data, and other services inside the app.",
   },
 ];
 
-const WHY_ITEMS: { icon: LucideIcon; tag: string; copy: string; shot?: string }[] = [
+const WHY_ITEMS: { icon: LucideIcon; tag: string; copy: string }[] = [
   {
     icon: Lock,
     tag: "Secure",
-    copy: "Passcode-protected access and encrypted transactions safeguard your account and wallet at every step.",
-    shot: "/images/screenshot-passcode.png",
+    copy: "Passcode-protected access, identity-verified accounts, and encrypted payments safeguard your account at every step.",
   },
   {
     icon: Zap,
@@ -104,7 +103,7 @@ export default function HomePage() {
           <div className="hero-phone-col">
             <PhoneShot
               src="/images/screenshot-home.png"
-              alt="Rovenet home screen showing wallet balance and Social Hunt"
+              alt="Rovenet home screen showing Social Hunt"
             />
           </div>
         </div>
@@ -198,15 +197,6 @@ export default function HomePage() {
                     </div>
                     <h3>{w.tag}</h3>
                     <p>{w.copy}</p>
-                    {w.shot && (
-                      <Image
-                        className="why-shot"
-                        src={w.shot}
-                        alt="Rovenet passcode security screen"
-                        width={260}
-                        height={550}
-                      />
-                    )}
                   </div>
                 </Reveal>
               );

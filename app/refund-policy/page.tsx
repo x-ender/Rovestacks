@@ -4,7 +4,7 @@ import { REFUND_SECTIONS } from "../lib/legalContent";
 
 export const metadata: Metadata = {
   title: "Refund Policy",
-  description: "When payments for promotion packages and WhatsApp status ad campaign deposits are, and are not, refundable.",
+  description: "When payments for services, promotion packages, and WhatsApp status ad campaign deposits are refunded automatically, and when they are final.",
 };
 
 export default function RefundPolicyPage() {

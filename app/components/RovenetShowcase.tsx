@@ -19,7 +19,7 @@ const TABS: Tab[] = [
     label: "Home",
     icon: Store,
     shot: "/images/screenshot-home.png",
-    copy: "One home for your wallet, featured promotions, Social Hunt, and games.",
+    copy: "One home for your earnings, featured promotions, Social Hunt, and games.",
   },
   {
     key: "market",

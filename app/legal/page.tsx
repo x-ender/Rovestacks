@@ -22,13 +22,13 @@ const DOCS: { href: string; icon: LucideIcon; title: string; copy: string }[] = 
     href: "/terms-and-conditions",
     icon: ScrollText,
     title: "Terms & Conditions",
-    copy: "The agreement that governs your use of Rovenet, including listings, payments, WhatsApp status ad campaigns, games, and redemptions.",
+    copy: "The agreement that governs your use of Rovenet, including listings, identity verification, payments, WhatsApp status ad campaigns, games, and earnings.",
   },
   {
     href: "/refund-policy",
     icon: RotateCcw,
     title: "Refund Policy",
-    copy: "When payments for promotion packages and WhatsApp status ad campaign deposits are, and are not, refundable.",
+    copy: "When payments for services, promotion packages, and WhatsApp status ad campaign deposits are refunded automatically, and when they are final.",
   },
 ];
 

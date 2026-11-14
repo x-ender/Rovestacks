@@ -46,8 +46,8 @@ export default function ProductsPage() {
               <h3>Nigeria&apos;s classified and digital marketplace app.</h3>
               <p>
                 One account. Everything Rovenet. Shop Naira-priced classifieds across Nigeria, join
-                communities, earn with WhatsApp Ads, play games in the app, and redeem your
-                earnings as airtime and data through VTU.
+                communities, earn with WhatsApp Ads, play games in the app, and spend your
+                earnings on airtime, data, and other services.
               </p>
               <Link href="/rovenet" className="btn btn-violet" style={{ marginTop: 20, width: "fit-content" }}>
                 Explore Rovenet <ArrowRight size={16} />
